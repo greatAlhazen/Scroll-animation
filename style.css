@@ -27,3 +27,73 @@ a {
   color: inherit;
   cursor: pointer;
 }
+
+.header {
+  height: 100vh;
+  background-image: url(./img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* navbar */
+
+.navbar {
+  padding-top: 1.5rem;
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+
+.navbar__logo {
+  cursor: pointer;
+}
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navbar__link:link,
+.navbar__link:visited {
+  font-size: 1.8rem;
+  color: #6d6d64;
+  display: inline-block;
+  transition: all 0.2s;
+}
+
+.navbar__link:hover,
+.navbar__link:active {
+  color: #000;
+  transform: translateY(-3px);
+}
+
+.header__content {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+/* typhography */
+
+.title-2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.title-4 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.pharaphraph {
+  font-size: 1.4rem;
+}
+
+/* utilities */
+
+.mb-small {
+  margin-bottom: 1.5rem;
+}
