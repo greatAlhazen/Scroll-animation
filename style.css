@@ -28,6 +28,10 @@ a {
   cursor: pointer;
 }
 
+svg {
+  cursor: pointer;
+}
+
 .header {
   height: 100vh;
   background-image: url(./img/bg.jpg);
@@ -124,6 +128,39 @@ a {
   margin: 0 auto;
 }
 
+/* teachers */
+
+.teachers {
+  margin-top: 15rem;
+  padding: 0 4rem;
+}
+
+/* teachers-card */
+
+.teachers-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.teachers-card__image {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.teachers-card__icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.teachers-card__icon {
+  width: 2rem;
+  height: 2rem;
+}
+
 /* float-grid */
 
 .float-grid {
@@ -155,6 +192,16 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 4rem;
+}
+
+/* flexbox*/
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  flex-wrap: wrap;
 }
 
 /* typhography */
@@ -220,4 +267,8 @@ a {
 
 .mb-large {
   margin-bottom: 4rem;
+}
+
+.text-center {
+  text-align: center;
 }
