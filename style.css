@@ -161,6 +161,77 @@ svg {
   height: 2rem;
 }
 
+/* contact */
+
+.contact__title {
+  margin-top: 15rem;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container {
+  width: 70%;
+  min-height: 50rem;
+  display: flex;
+  align-items: center;
+  background-color: #ddd0c8;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  border: 1px solid rgba(0, 0, 0, 0.22);
+}
+
+.contact__right {
+  flex: 0 0 60%;
+  height: 100%;
+  padding: 8rem;
+  background-color: #fff;
+}
+
+.form__input,
+.form__text-area {
+  width: 100%;
+  padding: 8px;
+}
+
+.form__text-area {
+  resize: none;
+}
+
+.contact__left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.reach {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.reach__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/* footer */
+
+.footer {
+  padding: 6rem;
+  background-color: #323232;
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
 /* float-grid */
 
 .float-grid {
