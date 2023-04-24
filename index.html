@@ -13,25 +13,32 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
+  <script defer src="script.js"></script>
   <body>
-    <header class="header">
+    <input type="checkbox" class="navbar-input" id="navbar-toggle" />
+
+    <label for="navbar-toggle" class="navbar-icon-box">
+      <div class="navbar-icon"></div>
+    </label>
+
+    <header class="header" id="home">
       <nav class="navbar">
         <h4 class="navbar__logo title-4">GreatAlhazen</h4>
         <ul class="navbar__list">
           <li class="navbar__item">
-            <a href="#" class="navbar__link">Home</a>
+            <a href="#home" class="navbar__link">Home</a>
           </li>
           <li class="navbar__item">
-            <a href="#" class="navbar__link">About</a>
+            <a href="#about" class="navbar__link">About</a>
           </li>
           <li class="navbar__item">
-            <a href="#" class="navbar__link">Services</a>
+            <a href="#services" class="navbar__link">Services</a>
           </li>
           <li class="navbar__item">
-            <a href="#" class="navbar__link">Teachers</a>
+            <a href="#teachers" class="navbar__link">Teachers</a>
           </li>
           <li class="navbar__item">
-            <a href="#" class="navbar__link">Contact</a>
+            <a href="#contact" class="navbar__link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -49,7 +56,7 @@
       </div>
     </header>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="float-grid">
         <div class="col-1-of-2">
           <h3 class="title-3 mb-small">Our story began</h3>
@@ -79,7 +86,7 @@
       </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
       <h1 class="title-1 mb-large">Our services</h1>
       <div class="grid">
         <div class="services-card">
@@ -124,7 +131,7 @@
         </div>
       </div>
     </section>
-    <section class="teachers">
+    <section class="teachers" id="teachers">
       <h1 class="title-1 mb-large">Our Teachers</h1>
       <div class="flexbox">
         <div class="teachers-card">
@@ -207,7 +214,7 @@
     </section>
 
     <h1 class="title-1 mb-large contact__title">Contact us</h1>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="contact-container">
         <div class="contact__right">
           <form action="#" class="form">
