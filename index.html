@@ -10,9 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
   <script defer src="script.js"></script>
   <body>
     <input type="checkbox" class="navbar-input" id="navbar-toggle" />
@@ -23,7 +25,7 @@
 
     <header class="header" id="home">
       <nav class="navbar">
-        <h4 class="navbar__logo title-4">GreatAlhazen</h4>
+        <h4 class="navbar__logo title-4" data-aos="fade-right">GreatAlhazen</h4>
         <ul class="navbar__list">
           <li class="navbar__item">
             <a href="#home" class="navbar__link">Home</a>
@@ -44,8 +46,10 @@
       </nav>
 
       <div class="header__content">
-        <h2 class="title-2 mb-small">Welcome to our website</h2>
-        <p class="pharaphraph">
+        <h2 class="title-2 mb-small" data-aos="fade-up">
+          Welcome to our website
+        </h2>
+        <p class="pharaphraph" data-aos="fade-down" data-aos-delay="300">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
           ipsum sapiente aspernatur libero repellat quis consequatur ducimus
           quam nisi exercitationem omnis earum qui. Lorem ipsum dolor sit amet
@@ -58,7 +62,7 @@
 
     <section class="about" id="about">
       <div class="float-grid">
-        <div class="col-1-of-2">
+        <div class="col-1-of-2" data-aos="fade-right">
           <h3 class="title-3 mb-small">Our story began</h3>
           <p class="pharaphraph mb-medium">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
@@ -70,7 +74,7 @@
           </p>
           <button class="btn">Join us</button>
         </div>
-        <div class="col-1-of-2">
+        <div class="col-1-of-2" data-aos="flip-right">
           <div class="about__image-box">
             <img
               src="img/about.jpg"
@@ -87,9 +91,9 @@
     </section>
 
     <section class="services" id="services">
-      <h1 class="title-1 mb-large">Our services</h1>
+      <h1 class="title-1 mb-large" data-aos="fade-down">Our services</h1>
       <div class="grid">
-        <div class="services-card">
+        <div class="services-card" data-aos="fade-right">
           <svg class="services-card__icon mb-medium">
             <use xlink:href="img/sprite.svg#icon-deno"></use>
           </svg>
@@ -99,7 +103,7 @@
             sit amet consectetur adipisicing elit.
           </p>
         </div>
-        <div class="services-card">
+        <div class="services-card" data-aos="fade-right" data-aos-delay="300">
           <svg class="services-card__icon mb-medium">
             <use xlink:href="img/sprite.svg#icon-node-dot-js"></use>
           </svg>
@@ -109,7 +113,7 @@
             sit amet consectetur adipisicing elit.
           </p>
         </div>
-        <div class="services-card">
+        <div class="services-card" data-aos="fade-right" data-aos-delay="500">
           <svg class="services-card__icon mb-medium">
             <use xlink:href="img/sprite.svg#icon-react"></use>
           </svg>
@@ -119,7 +123,7 @@
             sit amet consectetur adipisicing elit.
           </p>
         </div>
-        <div class="services-card">
+        <div class="services-card" data-aos="fade-right" data-aos-delay="700">
           <svg class="services-card__icon mb-medium">
             <use xlink:href="img/sprite.svg#icon-vue-dot-js"></use>
           </svg>
@@ -132,9 +136,9 @@
       </div>
     </section>
     <section class="teachers" id="teachers">
-      <h1 class="title-1 mb-large">Our Teachers</h1>
+      <h1 class="title-1 mb-large" data-aos="fade-down">Our Teachers</h1>
       <div class="flexbox">
-        <div class="teachers-card">
+        <div class="teachers-card" data-aos="fade-left">
           <img
             src="img/person1.jpg"
             class="teachers-card__image"
@@ -153,7 +157,7 @@
             </svg>
           </div>
         </div>
-        <div class="teachers-card">
+        <div class="teachers-card" data-aos="fade-left" data-aos-delay="300">
           <img
             src="img/person2.jpg"
             class="teachers-card__image"
@@ -172,7 +176,7 @@
             </svg>
           </div>
         </div>
-        <div class="teachers-card">
+        <div class="teachers-card" data-aos="fade-left" data-aos-delay="500">
           <img
             src="img/person3.jpg"
             class="teachers-card__image"
@@ -191,7 +195,7 @@
             </svg>
           </div>
         </div>
-        <div class="teachers-card">
+        <div class="teachers-card" data-aos="fade-left" data-aos-delay="700">
           <img
             src="img/person4.jpg"
             class="teachers-card__image"
@@ -213,9 +217,11 @@
       </div>
     </section>
 
-    <h1 class="title-1 mb-large contact__title">Contact us</h1>
+    <h1 class="title-1 mb-large contact__title" data-aos="fade-down">
+      Contact us
+    </h1>
     <section class="contact" id="contact">
-      <div class="contact-container">
+      <div class="contact-container" data-aos="fade-in">
         <div class="contact__right">
           <form action="#" class="form">
             <div class="form__box mb-small">

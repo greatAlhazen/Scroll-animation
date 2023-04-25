@@ -6,3 +6,10 @@ navLinks.forEach(function (link) {
     checkbox.checked = false;
   });
 });
+
+AOS.init({
+  delay: 100,
+  duration: 2000,
+  once: false,
+  mirror: false,
+});

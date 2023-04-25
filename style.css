@@ -506,3 +506,54 @@ svg {
     color: #fff;
   }
 }
+
+/* 1020px */
+
+@media only screen and (max-width: 63.75em) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    grid-gap: 4rem;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .contact__right {
+    width: 100%;
+  }
+
+  .services-card:nth-child(3) {
+    transition-delay: 0.1s !important ;
+  }
+
+  .services-card:nth-child(4) {
+    transition-delay: 0.3s !important ;
+  }
+}
+
+/* 640px */
+@media only screen and (max-width: 40em) {
+  .float-grid {
+    max-width: 50rem;
+  }
+
+  [class^="col-"] {
+    width: 100% !important;
+  }
+
+  [class^="col-"]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .about__image-box {
+    width: 100%;
+  }
+
+  .teachers-card {
+    min-width: 30%;
+  }
+}
